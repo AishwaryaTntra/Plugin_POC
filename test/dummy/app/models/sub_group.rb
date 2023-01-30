@@ -1,0 +1,2 @@
+class SubGroup < ApplicationRecord
+end
