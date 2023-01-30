@@ -1,0 +1,2 @@
+class BasicGroup < ApplicationRecord
+end
