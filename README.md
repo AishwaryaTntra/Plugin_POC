@@ -20,6 +20,10 @@ Or install it yourself as:
 ```bash
 $ gem install accounts
 ```
+after that run the following commands to create the migration files
+```bash
+$ rails g accounts:migration
+```
 
 ## Contributing
 Contribution directions go here.
