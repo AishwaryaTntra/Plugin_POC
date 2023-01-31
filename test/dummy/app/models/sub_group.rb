@@ -1,2 +1,0 @@
-class SubGroup < ApplicationRecord
-end
