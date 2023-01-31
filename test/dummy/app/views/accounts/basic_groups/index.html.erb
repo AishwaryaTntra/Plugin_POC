@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Basic groups</h1>
+
+<div id="accounts_basic_groups">
+  <% @accounts_basic_groups.each do |accounts_basic_group| %>
+    <%= render accounts_basic_group %>
+    <p>
+      <%= link_to "Show this basic group", accounts_basic_group %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New basic group", new_accounts_basic_group_path %>
