@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 module Accounts
-  class SubGroup < ActiveRecord::Base
+  class ApplicationController < ActionController::Base
   end
 end

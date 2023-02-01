@@ -1,2 +1,6 @@
-class Accounts::Group < ApplicationRecord
+# frozen_string_literal: true
+
+module Accounts
+  class Group < ActiveRecord::Base
+  end
 end
