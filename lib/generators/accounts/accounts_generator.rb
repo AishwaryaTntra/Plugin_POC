@@ -16,7 +16,7 @@ module Generators
     class_option :routes, desc: 'Generates routes', type: :boolean, default: true
 
     def add_accounts_routes
-      account_routes = "scope module: 'accounts' do"
+      account_routes = "scope module: 'accounts' do".dup
       ActiveRecord::Base.connection.tables.map do |class_name|
         account_routes << "resources: #{class_name}"
       end
