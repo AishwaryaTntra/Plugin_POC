@@ -1,8 +1,6 @@
 # # frozen_string_literal: true
 
-require 'rails/generators'
 require 'rails/generators/base'
-require 'rails/generators/controllers'
 
 module Accounts
   # accounts/controllers/controllers_generator
