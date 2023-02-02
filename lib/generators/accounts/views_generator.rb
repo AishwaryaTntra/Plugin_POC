@@ -9,7 +9,6 @@ module Accounts
 
       included do
         arguement :scope, required: false, default: 'accounts', desc: 'The scope to copy views to'
-        class_option :form_builder, aliases "-b"
         class_option :markerb
         
         public_task :copy_views
