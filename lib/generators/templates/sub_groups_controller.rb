@@ -2,7 +2,7 @@
 
 module Accounts
   # app > controllers > accounts > sub_groups_controller
-  class SubGroupsController < ::Accounts::ApplicationController
+  class SubGroupsController < ApplicationController
     before_action :set_accounts_sub_group, only: %i[show edit update destroy]
 
     # GET /accounts/sub_groups
