@@ -8,9 +8,9 @@ module Accounts
       extend ActiveSupport::Concern
 
       included do
-        arguement :scope, required: false, default: 'accounts', desc: 'The scope to copy views to'
+        argument :scope, required: false, default: 'accounts', desc: 'The scope to copy views to'
         class_option :markerb
-        
+
         public_task :copy_views
       end
 
