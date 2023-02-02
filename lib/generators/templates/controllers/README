@@ -1,0 +1,16 @@
+================================================================
+
+The controllers for accounting module have been created
+
+  |-  app
+      |
+      |- controllers
+        |
+        |- accounts
+          | - basic_groups_controller
+          | - groups_controller
+          | - sub_groups_controller
+          | - account_masters_controller
+
+          
+================================================================

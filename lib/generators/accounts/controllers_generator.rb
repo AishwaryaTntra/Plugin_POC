@@ -5,13 +5,13 @@ require 'rails/generators/base'
 module Accounts
   # accounts/controllers/controllers_generator
   class ControllersGenerator < Rails::Generators::Base
-    CONTROLLERS = %w[accounts_masters basic_groups groups sub_groups].freeze
+    CONTROLLERS = %w[account_masters basic_groups groups sub_groups].freeze
 
     desc <<-DESC.strip_heredoc
       This will create the controllers for accounts masters
     DESC
 
-    source_root File.expand_path('../templates', __dir__)
+    source_root File.expand_path('../templates/controllers', __dir__)
 
     def create_controllers
       CONTROLLERS.each do |name|

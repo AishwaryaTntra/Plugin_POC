@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Account masters</h1>
+
+<div id="accounts_account_masters">
+  <% @accounts_account_masters.each do |accounts_account_master| %>
+    <%= render accounts_account_master %>
+    <p>
+      <%= link_to "Show this account master", accounts_account_master %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New account master", new_accounts_account_master_path %>
