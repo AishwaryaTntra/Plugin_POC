@@ -9,7 +9,7 @@ module Accounts
     include Rails::Generators::Migration
 
     desc 'Generates migration for accounting module'
-    source_root File.expand_path('../templates', __dir__)
+    source_root File.expand_path('../templates/migrations', __dir__)
 
     def create_migration_file
       migration_template 'migration.rb', 'db/migrate/accounts_migration.rb'
