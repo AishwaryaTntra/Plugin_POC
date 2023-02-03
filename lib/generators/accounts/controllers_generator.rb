@@ -11,7 +11,7 @@ module Accounts
       This will create the controllers for accounts masters
     DESC
 
-    source_root File.expand_path('../templates/controllers', __dir__)
+    source_root File.expand_path('../../../../app/controllers/accounts', __dir__)
 
     def create_controllers
       CONTROLLERS.each do |name|
