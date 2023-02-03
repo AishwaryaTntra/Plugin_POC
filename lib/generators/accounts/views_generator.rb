@@ -4,6 +4,7 @@ require 'rails/generators/base'
 
 module Accounts
   module Generators
+    # lib > generatots > accounts > views_generator 
     class ViewsGenerator < Rails::Generators::Base
       desc 'Copies Accounts views to your application.'
       argument :scope, required: false, default: 'accounts',
