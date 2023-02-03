@@ -11,7 +11,11 @@ module Accounts
       This will create the controllers for accounts masters
     DESC
 
-    source_root File.expand_path('../../../../app/controllers/accounts', __dir__)
+    # if we want to generate the controller files directly from the app folder 
+    # source_root File.expand_path('../../../../app/controllers/accounts', __FILE__) 
+
+    # if you want to generate the controller files from the templates
+    source_root File.expand_path('../templates/controllers', __dir__)
 
     def create_controllers
       CONTROLLERS.each do |name|
@@ -19,6 +23,7 @@ module Accounts
       end
     end
 
+    # comment this method if we are over riding from the app folder
     def show_readme
       readme 'README' if behavior == :invoke
     end
